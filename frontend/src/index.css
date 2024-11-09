@@ -1,0 +1,119 @@
+body {
+  background-image: linear-gradient(to top, #cc208e 0%, #6713d2 100%);
+  font-family: Arial, sans-serif;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 850px;
+  margin: 40px auto;
+  padding: 30px; /* Increased padding */
+  background: rgba(0, 0, 0, 0.5); /* Slightly darker for contrast */
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.7); /* Enhanced shadow */
+}
+
+h1, h2, h3 {
+  text-align: center;
+  margin-bottom: 20px; /* Added margin for separation */
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Increased gap for better spacing */
+}
+
+input[type="text"],
+input[type="password"],
+button {
+  padding: 12px; /* Slightly larger padding */
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 1rem;
+}
+
+input[type="text"],
+input[type="password"] {
+  background: rgba(255, 255, 255, 0.9); /* Lighten background */
+  color: #333;
+  transition: background 0.3s ease; /* Smooth transition on focus */
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  background: rgba(255, 255, 255, 1); /* Highlight on focus */
+}
+
+button {
+  background-color: #6713d2;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 4px 8px rgba(245, 244, 244, 0.5);
+  margin-top: 10px; /* Add margin above buttons if necessary */
+}
+
+button:hover {
+  background-color: #d21373;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 30px; /* Increased margin */
+}
+
+table th,
+table td {
+  padding: 15px; /* Increased padding */
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+table th {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+table tr:nth-child(even) {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Modal Styles */
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1000;
+}
+
+.modal-content {
+  background: rgba(255, 255, 255, 0.9);
+  color: #333;
+  padding: 25px; /* Increased padding */
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Enhanced shadow */
+}
+
+.modal-content button {
+  background-color: #6713d2;
+  color: white;
+  padding: 10px 20px; /* Added padding for button */
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s ease;
+}
+
+.modal-content button:hover {
+  background-color: #d21373; /* Hover effect */
+}
